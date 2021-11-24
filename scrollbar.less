@@ -1,0 +1,50 @@
+/* 定制滚动条 mixin */
+.scrollbar {
+  /* 定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸 */
+  &::-webkit-scrollbar {
+    width: 10px; // 对垂直滚动条有效
+    height: 10px; // 对水平滚动条有效
+    background-color: #f9fafb;
+  }
+
+  /* 定义滚动条的轨道颜色、内阴影及圆角 */
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background-color: #f1f3f5; // f8fafc
+  }
+
+  /* 定义滑块颜色、内阴影及圆角 */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* 定义两端按钮的样式 */
+  // &::-webkit-scrollbar-button {
+  //   background-color: white;
+  // }
+  /* 定义右下角汇合处的样式 */
+  // &::-webkit-scrollbar-corner {
+  //   background-color: white;
+  // }
+}
+
+/* 使用类名 .nice-scrollbar 即可使用scrollbar的mixin */
+.nice-scrollbar {
+  .scrollbar();
+
+  overflow: hidden; // 可能会有副作用，例如不能支持到背景滚动了
+
+  &:hover {
+    overflow: overlay;
+  }
+}

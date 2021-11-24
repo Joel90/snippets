@@ -1,0 +1,172 @@
+@import '~antd/lib/style/color/colors.less';
+
+:root {
+  --color-primary: #1890ff;
+  --color-primary-text: #3f90f7;
+  --color-primary-height: #5ba8f8;
+  --color-primary-light: #e9f7fe;
+  --color-border-light: #f0f0f0;
+  --color-main: #d9693b;
+  --color-main-light: #fcf6f3;
+  --color-normal: #d9d9d9;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-success {
+  color: #52c41a;
+}
+
+.color-warning {
+  color: #faad14;
+}
+
+.color-danger {
+  color: #f5222d;
+}
+
+.color-info {
+  color: var(--color-normal);
+}
+
+// ======= 绿色按钮 ======= //
+.btn-success {
+  // type=default type=dashed
+  &.ant-btn:hover,
+  &.ant-btn:focus,
+  &.ant-btn-dashed:hover,
+  &.ant-btn-dashed:focus {
+    color: @green-5;
+    border-color: @green-5;
+  }
+
+  &.ant-btn:active,
+  &.ant-btn-dashed:active {
+    color: @green-7;
+    border-color: @green-7;
+  }
+
+  // type=primary
+  &.ant-btn-primary {
+    background: @green-6;
+    border-color: @green-6;
+  }
+
+  &.ant-btn-primary:hover,
+  &.ant-btn-primary:focus {
+    color: #fff;
+    background: @green-5;
+    border-color: @green-5;
+  }
+
+  &.ant-btn-primary:active {
+    color: #fff;
+    background: @green-7;
+    border-color: @green-7;
+  }
+
+  // type=text
+  &.ant-btn-text {
+    color: @green-6;
+  }
+
+  &.ant-btn-text:hover,
+  &.ant-btn-text:focus {
+    color: @green-5;
+    border-color: transparent;
+  }
+
+  &.ant-btn-text:active {
+    color: @green-7;
+    border-color: transparent;
+  }
+
+  // 特殊 type=primary 且 ghost
+  &.ant-btn-background-ghost.ant-btn-primary {
+    color: @green-6;
+    border-color: @green-6;
+  }
+
+  &.ant-btn-background-ghost.ant-btn-primary:hover,
+  &.ant-btn-background-ghost.ant-btn-primary:focus {
+    color: @green-5;
+    border-color: @green-5;
+  }
+
+  &.ant-btn-background-ghost.ant-btn-primary:active {
+    color: @green-7;
+    border-color: @green-7;
+  }
+}
+
+// ======= 橙色按钮 ======= //
+.btn-warning {
+  // type=default type=dashed
+  &.ant-btn:hover,
+  &.ant-btn:focus,
+  &.ant-btn-dashed:hover,
+  &.ant-btn-dashed:focus {
+    color: @gold-5;
+    border-color: @gold-5;
+  }
+
+  &.ant-btn:active,
+  &.ant-btn-dashed:active {
+    color: @gold-7;
+    border-color: @gold-7;
+  }
+
+  // type=primary
+  &.ant-btn-primary {
+    background: @gold-6;
+    border-color: @gold-6;
+  }
+
+  &.ant-btn-primary:hover,
+  &.ant-btn-primary:focus {
+    color: #fff;
+    background: @gold-5;
+    border-color: @gold-5;
+  }
+
+  &.ant-btn-primary:active {
+    color: #fff;
+    background: @gold-7;
+    border-color: @gold-7;
+  }
+
+  // type=text
+  &.ant-btn-text {
+    color: @gold-6;
+  }
+
+  &.ant-btn-text:hover,
+  &.ant-btn-text:focus {
+    color: @gold-5;
+    border-color: transparent;
+  }
+
+  &.ant-btn-text:active {
+    color: @gold-7;
+    border-color: transparent;
+  }
+
+  // 特殊 type=primary 且 ghost
+  &.ant-btn-background-ghost.ant-btn-primary {
+    color: @gold-6;
+    border-color: @gold-6;
+  }
+
+  &.ant-btn-background-ghost.ant-btn-primary:hover,
+  &.ant-btn-background-ghost.ant-btn-primary:focus {
+    color: @gold-5;
+    border-color: @gold-5;
+  }
+
+  &.ant-btn-background-ghost.ant-btn-primary:active {
+    color: @gold-7;
+    border-color: @gold-7;
+  }
+}
